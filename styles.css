@@ -13,6 +13,7 @@
 }
 .header-brand-name{
     font-family: dynapuff, cursive, arial;
+    /* font-size: 1.5rem; */
 }
 .slogan-homepage{
     color: rgba(81, 23, 47, 1);
@@ -53,6 +54,16 @@
 }
 .footer-head{
     color: beige;
+    text-decoration: none;
+}
+.footer-brand{
+    color: beige;
+    font-family: Dynapuff, cursive;
+    text-decoration: none;
+}
+.footer-brand:hover{
+    color: rgb(153, 41, 87);
+    text-decoration: underline;
 }
 .footer-about{
     color: beige;
