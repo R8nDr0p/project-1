@@ -1,0 +1,19 @@
+.company-icon{
+    width:100px;
+}
+.navbar-brand{
+    color: rgba(81, 23, 47, 1);
+}
+.slogan-homepage{
+    color: rgba(81, 23, 47, 1);
+}
+.slide-show{
+    background-color: rgb(233, 233, 186);
+    border-radius: 20px;
+}
+.carousel-caption{
+    color: rgba(81, 23, 47, 1);
+}
+.ortholinear-label{
+    color: rgba(81, 23, 47, 1); 
+}
