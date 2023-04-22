@@ -17,3 +17,15 @@
 .ortholinear-label{
     color: rgba(81, 23, 47, 1); 
 }
+.card-button{
+    background-color: beige ;
+    border: 1px solid;
+    color: rgba(81, 23, 47, 1);
+}
+/* .card{
+    transition: transform 0.2s;
+}
+.card:hover{
+    transform: scale(1.1)
+} */
+
