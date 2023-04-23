@@ -72,6 +72,382 @@
         </div>
       </div>
     </nav>
+    <!-- Product order section -->
+    <div class="container form-container rounded p-3">
+      <div class="row">
+        <div class="col order-form-head">
+          <h1>Order Details</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic radio toggle button group"
+          >
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio1"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-primary" for="btnradio1"
+              >Barebones</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio2"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="btnradio2"
+              >Complete</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <div class="form-group">
+            <label class="form-label" for="product-id">Product</label>
+            <select name="product" id="product-id" class="form-select">
+              <option value="" selected disabled>Choose...</option>
+              <option value="">Ortho 48</option>
+              <option value="">Ortho 30</option>
+              <option value="">Stag 38 Ergo</option>
+              <option value="">Numeric 17</option>
+              <option value="">Stag 37</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic radio toggle button group"
+          >
+            <input
+              type="radio"
+              class="btn-check"
+              name="color"
+              id="black"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-primary" for="black">Black</label>
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="color"
+              id="clear"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="clear">Clear</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="color"
+              id="custom"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="custom">Custom</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-floating">
+            <textarea
+              id="inst-custom"
+              class="form-control"
+              style="height: 200px"
+            ></textarea>
+            <label for="inst-custom"
+              >Write your custom configuration
+              <br />
+              for your dream keyboard here...
+              <br />
+              ex.
+              <br />
+              Keyswitches: Cherry mx red
+              <br />
+              Keycaps: etc.
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Express Payment Options -->
+    <div class="container bg-primary-subtle rounded mt-3 mb-3 p-3">
+      <div class="row">
+        <div class="col payment-head text-center">
+          <h1>Express Payment Options</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center p-3">
+        <div class="col-1">
+          <a href="#"
+            ><img
+              class="payment-icon"
+              src="img/icon/icons8-gcash-100.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="col-1">
+          <a href="#"
+            ><img
+              class="payment-icon"
+              src="img/icon/icons8-paypal-64.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- form-section -->
+    <div class="container form-container rounded p-3">
+      <div class="row">
+        <div class="col order-form-head">
+          <h1>Order Form</h1>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2 g-2 mb-3">
+        <div class="col">
+          <label class="form-label" for="first-name-id">First Name</label>
+          <input type="text" class="form-control" id="first-name-id" />
+        </div>
+        <div class="col">
+          <label class="form-label" for="last-name-id">Last Name</label>
+          <input type="text" class="form-control" id="last-name-id" />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-6">
+          <div class="form-group">
+            <label class="mb-2" for="email-id"
+              >Email <span class="text-muted">(Optional)</span></label
+            >
+            <input
+              type="email"
+              id="email-id"
+              class="form-control"
+              placeholder="pepito@example.com"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input class="form-check-input" type="checkbox" id="notifyme" />
+          <label class="form-check-label" for="notifyme"
+            >Email me with news and offers</label
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="street-id">Street</label>
+          <input type="text" id="street-id" class="form-control" />
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-lg-2 mb-3">
+        <div class="col">
+          <div class="form-group">
+            <label class="mb-2" for="barangay-id">Barangay</label>
+            <input type="text" id="barangay-id" class="form-control" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label class="mb-2" for="city-id">City</label>
+            <input type="text" id="city-id" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-2" for="province-id">Province</label>
+            <select name="Province" id="province-id" class="form-select">
+              <option disabled selected>Choose...</option>
+              <option>Abra</option>
+              <option>Agusan del Norte</option>
+              <option>Agusan del Sur</option>
+              <option>Aklan</option>
+              <option>Albay</option>
+              <option>Antique</option>
+              <option>Apayao</option>
+              <option>Aurora</option>
+              <option>Basilan</option>
+              <option>Bataan</option>
+              <option>Batanes</option>
+              <option>Batangas</option>
+              <option>Benguet</option>
+              <option>Biliran</option>
+              <option>Bohol</option>
+              <option>Bukidnon</option>
+              <option>Bulacan</option>
+              <option>Cagayan</option>
+              <option>Camarines Norte</option>
+              <option>Camarines Sur</option>
+              <option>Camiguin</option>
+              <option>Capiz</option>
+              <option>Catanduanes</option>
+              <option>Cavite</option>
+              <option>Cebu</option>
+              <option>Compostela Valley</option>
+              <option>Cotabato</option>
+              <option>Davao de Oro</option>
+              <option>Davao del Norte</option>
+              <option>Davao del Sur</option>
+              <option>Davao Occidental</option>
+              <option>Davao Oriental</option>
+              <option>Dinagat Islands</option>
+              <option>Eastern Samar</option>
+              <option>Guimaras</option>
+              <option>Ifugao</option>
+              <option>Ilocos Norte</option>
+              <option>Ilocos Sur</option>
+              <option>Iloilo</option>
+              <option>Isabela</option>
+              <option>Kalinga</option>
+              <option>La Union</option>
+              <option>Laguna</option>
+              <option>Lanao del Norte</option>
+              <option>Lanao del Sur</option>
+              <option>Leyte</option>
+              <option>Maguindanao</option>
+              <option>Marinduque</option>
+              <option>Masbate</option>
+              <option>Metro Manila</option>
+              <option>Misamis Occidental</option>
+              <option>Misamis Oriental</option>
+              <option>Mountain Province</option>
+              <option>Negros Occidental</option>
+              <option>Negros Oriental</option>
+              <option>Northern Samar</option>
+              <option>Nueva Ecija</option>
+              <option>Nueva Vizcaya</option>
+              <option>Occidental Mindoro</option>
+              <option>Oriental Mindoro</option>
+              <option>Palawan</option>
+              <option>Pampanga</option>
+              <option>Pangasinan</option>
+              <option>Quezon</option>
+              <option>Quirino</option>
+              <option>Rizal</option>
+              <option>Romblon</option>
+              <option>Samar</option>
+              <option>Sarangani</option>
+              <option>Siquijor</option>
+              <option>Sorsogon</option>
+              <option>South Cotabato</option>
+              <option>Southern Leyte</option>
+              <option>Sultan Kudarat</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="mb-2" for="zip-id">Zip Code</label>
+            <input
+              type="number"
+              id="zip-id"
+              class="form-control w-50"
+              placeholder="ex.3500"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Bank Details Section -->
+    <div class="container bg-primary-subtle">
+      <div class="row">
+        <div class="col order-form-head">
+          <h1>Bank Details</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input
+                class="form-check-input me-1"
+                type="radio"
+                name="card-bank"
+                value=""
+                id="debit-card"
+                checked
+              />
+              <label class="form-check-label" for="debit-card"
+                >Debit Card</label
+              >
+            </li>
+            <li class="list-group-item">
+              <input
+                class="form-check-input me-1"
+                type="radio"
+                name="card-bank"
+                value=""
+                id="credit-card"
+              />
+              <label class="form-check-label" for="credit-card"
+                >Credit Card</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <div class="form-group">
+            <label class="mb-2" for="card-name-id">Name on card</label>
+            <input type="text" id="card-name-id" class="form-control" />
+            <small id="card-name-id" class="form-text text-muted"
+              >Full name as displayed on card</small
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label class="mb-2" for="card-number-id">Card number</label>
+            <input type="number" id="card-number-id" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label class="mb-2" for="expiration-id">Expiration</label>
+            <input type="date" id="expiration-id" class="form-control" />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label class="mb-2" for="cvv-id">CVV</label>
+            <input type="number" id="cvv-id" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row justify-content-center">
+        <div class="col-3">
+          <button type="button" class="btn card-button mb-3">
+            Done with Order
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- footer section -->
     <footer class="mt-5 bg-dark text-white">
       <div class="row">
@@ -83,7 +459,7 @@
           </div>
           <div class="row">
             <div class="col ms-5">
-              <a class="footer-about" href="#">About Us</a>
+              <a class="footer-about" href="about.html">About Us</a>
             </div>
           </div>
           <div class="row">

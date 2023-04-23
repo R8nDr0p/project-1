@@ -90,3 +90,31 @@
 .title-about{
    color: rgba(81, 23, 47, 1); 
 }
+.payment-head{
+    font-family: courier, courier new, times new roman;
+}
+.payment-icon{
+    width: 50px;
+}
+.form-container{
+    background-color: beige;
+}
+.order-form-head{
+    font-family: courier, courier new, times new roman;
+}
+.form-button{
+    /* background-color: beige ;
+    border: 1px solid;
+    color: rgba(81, 23, 47, 1); */
+    background-color:rgba(81, 23, 47, 1);
+    border: 1px solid;
+    color: beige;
+}
+.form-button:hover{
+    /* background-color:rgba(81, 23, 47, 1);
+    border: 1px solid;
+    color: beige; */
+    background-color: beige ;
+    border: 1px solid;
+    color: rgba(81, 23, 47, 1);
+}

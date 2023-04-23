@@ -75,11 +75,14 @@
     <!-- company slogan -->
     <section class="company-slogan">
       <div class="container mt-4">
-        <div class="row text-center">
-          <h2 class="slogan-homepage">
-            "Experience the comfort of typing, <br />
-            elevate your productivity with our <br />
-            customized ergonomic keyboard”
+        <div class="row text-center justify-content-center">
+          <h2 class="slogan-homepage w-75">
+            "<span id="typed"></span>"
+            <!-- Experience the comfort of typing,
+            <br />
+            elevate your productivity with our
+            <br />
+            customized ergonomic keyboard” -->
           </h2>
         </div>
       </div>
@@ -294,7 +297,7 @@
                   >
                     Close
                   </button>
-                  <a class="btn card-button" href="#">Contact us</a>
+                  <a class="btn card-button" href="contact.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -303,6 +306,7 @@
           <div class="col">
             <div class="card h-100">
               <img
+                class="card-image"
                 src="img/ortholinear-keyboards/30key_keyboard-transformed.png"
                 alt=""
               />
@@ -471,7 +475,7 @@
                   >
                     Close
                   </button>
-                  <a class="btn card-button" href="#">Contact us</a>
+                  <a class="btn card-button" href="contact.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -479,7 +483,11 @@
           <!-- prod 3 -->
           <div class="col">
             <div class="card h-100">
-              <img src="img/ortholinear-keyboards/Ortho-48-nobg.png" alt="" />
+              <img
+                class="card-image"
+                src="img/ortholinear-keyboards/Ortho-48-nobg.png"
+                alt=""
+              />
               <div class="card-body">
                 <h5 class="card-title">Ortho 48</h5>
                 <p class="card-text">Functionality with less layers!</p>
@@ -633,7 +641,7 @@
                   >
                     Close
                   </button>
-                  <a class="btn card-button" href="#">Contact us</a>
+                  <a class="btn card-button" href="contact.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -812,7 +820,7 @@
                   >
                     Close
                   </button>
-                  <a class="btn card-button" href="#">Contact us</a>
+                  <a class="btn card-button" href="contact.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -820,7 +828,11 @@
           <!-- 2nd product -->
           <div class="col">
             <div class="card h-100">
-              <img src="img/Stagerred/P-38-1_Ergo_(1)-transformed.png" alt="" />
+              <img
+                class="card-image"
+                src="img/Stagerred/P-38-1_Ergo_(1)-transformed.png"
+                alt=""
+              />
               <div class="card-body">
                 <h5 class="card-title">Stag 38 Ergo</h5>
                 <p class="card-text">Traditional with a sense of comfort.</p>
@@ -973,7 +985,7 @@
                   >
                     Close
                   </button>
-                  <a class="btn card-button" href="#">Contact us</a>
+                  <a class="btn card-button" href="contact.html">Contact us</a>
                 </div>
               </div>
             </div>
@@ -1003,7 +1015,7 @@
           </div>
           <div class="row">
             <div class="col ms-5">
-              <a class="footer-about" href="#">About Us</a>
+              <a class="footer-about" href="about.html">About Us</a>
             </div>
           </div>
           <div class="row">
@@ -1053,6 +1065,16 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- typescript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "Experience the comfort of typing, elevate your productivity with our customized ergonomic keyboard",
+        ],
+        typeSpeed: 75,
+      });
+    </script>
     <!-- anime.js -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script type="text/javascript">
@@ -1061,7 +1083,7 @@
         scaleX: 0.7,
         scaleY: 0.7,
         // rotate: '1turn',
-        // loop: true,
+        loop: true,
         delay: 1000,
         endDelay: 500,
         direction: "alternate",
