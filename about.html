@@ -1,12 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Palace</title>
+    <!-- favicon icon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/icon/keyboard_48029.ico"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- <div class="d-flex align-items-center"> -->
+        <a class="navbar-brand ms-2 fw-bold p-0" href="index.html"
+          ><h1 class="header-brand-name">
+            <i class="fa-solid fa-bounce fa-keyboard fa-2xl"></i>Keyboard Palace
+          </h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- </div> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"
+                ><i class="fa-solid fa-address-card fa-flip"></i>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--body section  -->
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h1>About Us</h1>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col text-center company-history">
+          <h3>Company history</h3>
+          <p class="lead">
+            So, the reason I started my company making ergonomic keyboards is
+            because I used to experience a lot of pain and discomfort in my
+            hands and wrists after typing for long periods of time on a regular
+            keyboard. I did some research and discovered ergonomic keyboards,
+            which are designed to reduce strain and improve comfort during
+            extended typing sessions. The problem was, I found that the options
+            on the market were pretty limited and often too expensive. So, with
+            my background in engineering and product design, I decided to create
+            my own company focused on designing and manufacturing high-quality,
+            ergonomic keyboards that were more affordable and accessible to
+            everyone. I spent a lot of time testing different materials and
+            designs, and working with ergonomics experts to make sure my
+            keyboards were the best they could be. And finally, after months of
+            hard work, I launched my company and released my first line of
+            ergonomic keyboards, which quickly gained a following among
+            professionals who valued their health and comfort. Since then, my
+            company has grown and expanded to include a range of ergonomic
+            accessories, like wrist rests and ergonomic mice. And today, we're
+            recognized as a leader in the ergonomic keyboard market, with a
+            reputation for quality, innovation, and affordability.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3 class="mt-3">Why? Ortholinear Keyboards.</h3>
+          <img class="img-fluid" src="img/ortholinear-keyboards/p-48-transformed.png" alt="">
+          <p class="lead">
+            Ortholinear keyboards are designed with the keys arranged in a grid,
+            rather than the staggered layout found on traditional keyboards.
+            This layout can be beneficial for a few reasons, even though
+            ortholinear keyboards typically have fewer keys.
+          </p>
+          <p>
+            Firstly, the ortholinear layout makes it easier to reach keys
+            accurately and consistently, since the keys are arranged in straight
+            rows and columns. This can result in a more efficient typing
+            experience, with fewer errors and less strain on the hands and
+            fingers.
+          </p>
+          <p>
+            Secondly, the ortholinear layout can make it easier to use multiple
+            layers of key functions, allowing you to access more commands and
+            shortcuts without cluttering up the keyboard with extra keys. This
+            can be especially useful for programmers, gamers, or anyone who
+            needs to use a lot of different keyboard commands in their work.
+          </p>
+          <p>
+            Finally, some people simply find the ortholinear layout more
+            comfortable to type on, since it can reduce the amount of hand and
+            finger movement required to reach different keys. This can be
+            especially beneficial for those with repetitive strain injuries or
+            other hand and wrist issues.
+          </p>
+          <p>
+            So, while ortholinear keyboards may have fewer keys than traditional
+            keyboards, their unique layout and potential benefits make them a
+            popular choice for many users.
+          </p>
+        </div>
+      </div>
+    </div> -->
+      <div class="row">
+        <div class="col-2">
+          <div
+            id="simple-list-example"
+            class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center"
+          >
+            <a
+              class="p-1 rounded card-button text-decoration-none"
+              href="#simple-list-item-1"
+              >Company history</a
+            >
+            <a
+              class="p-1 rounded card-button text-decoration-none"
+              href="#simple-list-item-2"
+              >Vision?</a
+            >
+            <a
+              class="p-1 rounded card-button text-decoration-none"
+              href="#simple-list-item-3"
+              >Mission</a
+            >
+            <a
+              class="p-1 rounded card-button text-decoration-none"
+              href="#simple-list-item-4"
+              >Ortholinear</a
+            >
+            <a
+              class="p-1 rounded card-button text-decoration-none"
+              href="#simple-list-item-5"
+              >Split?</a
+            >
+          </div>
+        </div>
+        <div class="col-10 text-center title-about">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#simple-list-example"
+            data-bs-offset="0"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <h4 id="simple-list-item-1">Company history</h4>
+            <p class="lead">
+              So, the reason I started my company making ergonomic keyboards is
+              because I used to experience a lot of pain and discomfort in my
+              hands and wrists after typing for long periods of time on a
+              regular keyboard. I did some research and discovered ergonomic
+              keyboards, which are designed to reduce strain and improve comfort
+              during extended typing sessions. The problem was, I found that the
+              options on the market were pretty limited and often too expensive.
+              So, with my background in engineering and product design, I
+              decided to create my own company focused on designing and
+              manufacturing high-quality, ergonomic keyboards that were more
+              affordable and accessible to everyone. I spent a lot of time
+              testing different materials and designs, and working with
+              ergonomics experts to make sure my keyboards were the best they
+              could be. And finally, after months of hard work, I launched my
+              company and released my first line of ergonomic keyboards, which
+              quickly gained a following among professionals who valued their
+              health and comfort. Since then, my company has grown and expanded
+              to include a range of ergonomic accessories, like wrist rests and
+              ergonomic mice. And today, we're recognized as a leader in the
+              ergonomic keyboard market, with a reputation for quality,
+              innovation, and affordability.
+            </p>
+            <h4 id="simple-list-item-2">Vision</h4>
+            <p class="lead">
+              Our vision is to create high-quality, customizable keyboards that
+              enhance productivity, comfort, and personal style. We strive to be
+              a leader in the custom keyboard industry by providing innovative
+              designs, exceptional customer service, and a passion for creating
+              products that our customers love.
+            </p>
+            <h4 id="simple-list-item-3">Mission</h4>
+            <p class="lead">
+              Our mission is to empower our customers to create their perfect
+              keyboard. We believe that a keyboard is more than just a tool for
+              typing - it's an extension of your personality, your work style,
+              and your creative vision. That's why we offer a wide range of
+              customization options, from keycaps and switches to layouts and
+              colors, so that each keyboard we create is unique to its owner.
+            </p>
+            <p>
+              At our core, we are driven by a commitment to quality, comfort,
+              and customization. We strive to create keyboards that are not only
+              beautiful and functional but also ergonomic and comfortable to
+              use. We also believe in the power of customization to inspire
+              creativity, boost productivity, and reflect individuality.
+            </p>
+            <p>
+              Through our products and services, we hope to foster a community
+              of keyboard enthusiasts and creators who share our passion for
+              customization, innovation, and quality.
+            </p>
+            <h4 id="simple-list-item-4">Why? Ortholinear Keyboards.</h4>
+            <img
+              class="img-fluid"
+              src="img/ortholinear-keyboards/p-48-transformed.png"
+              alt=""
+            />
+            <p class="lead">
+              Ortholinear keyboards are designed with the keys arranged in a
+              grid, rather than the staggered layout found on traditional
+              keyboards. This layout can be beneficial for a few reasons, even
+              though ortholinear keyboards typically have fewer keys.
+            </p>
+            <p>
+              Firstly, the ortholinear layout makes it easier to reach keys
+              accurately and consistently, since the keys are arranged in
+              straight rows and columns. This can result in a more efficient
+              typing experience, with fewer errors and less strain on the hands
+              and fingers.
+            </p>
+            <p>
+              Secondly, the ortholinear layout can make it easier to use
+              multiple layers of key functions, allowing you to access more
+              commands and shortcuts without cluttering up the keyboard with
+              extra keys. This can be especially useful for programmers, gamers,
+              or anyone who needs to use a lot of different keyboard commands in
+              their work.
+            </p>
+            <p>
+              Finally, some people simply find the ortholinear layout more
+              comfortable to type on, since it can reduce the amount of hand and
+              finger movement required to reach different keys. This can be
+              especially beneficial for those with repetitive strain injuries or
+              other hand and wrist issues.
+            </p>
+            <p>
+              So, while ortholinear keyboards may have fewer keys than
+              traditional keyboards, their unique layout and potential benefits
+              make them a popular choice for many users.
+            </p>
+            <h4 id="simple-list-item-5">Split or Not to split?</h4>
+            <img
+              class="img-fluid"
+              src="img/Stagerred/stag-38-ergo-custom-transformed.png"
+              alt=""
+            />
+            <p>
+              According to research, split keyboards can be beneficial for those
+              who type frequently or for long periods of time. One of the main
+              advantages of split keyboards is that they allow each hand to be
+              positioned independently, reducing strain and tension on the
+              hands, wrists, and forearms.
+            </p>
+            <p>
+              This ergonomic benefit can be especially useful for people with
+              repetitive strain injuries or other hand and wrist issues. Split
+              keyboards can also encourage a more natural and comfortable typing
+              posture, with the shoulders relaxed and the arms positioned at a
+              more natural angle, which can help reduce strain on the neck,
+              shoulders, and back.
+            </p>
+            <p>
+              In addition to these ergonomic benefits, split keyboards can be
+              more customizable and versatile than traditional keyboards. Many
+              split keyboards come with programmable keys or multiple layers of
+              key functions, allowing users to create shortcuts and macros that
+              can save time and improve productivity.
+            </p>
+            <p>
+              Overall, according to the research, split keyboards can offer a
+              more comfortable and ergonomic typing experience for those who
+              spend a lot of time typing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="mt-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col ms-5">
+              <h3 class="footer-head">Follow us</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5">
+              <a class="footer-about" href="#">About Us</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ms-5 mt-4">
+              <a class="footer-brand" href="index.html"
+                ><h1>
+                  <i class="fa-solid fa-keyboard fa-bounce fa-l"></i>Keyboard
+                  Palace
+                </h1></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col text-end me-5">
+              <a class="footer-social-buttons" href="#"
+                ><i class="fa-brands fa-facebook fa-spin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-end me-5">
+              <a class="footer-social-buttons" href="#"
+                ><i class="fa-brands fa-instagram fa-flip"></i
+              ></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-end me-5">
+              <a class="footer-social-buttons" href="#"
+                ><i class="fa-brands fa-github fa-bounce"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/4473bce2a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script type="text/javascript">
+      let animation = anime({
+        targets: ".card-image",
+        scaleX: 0.7,
+        scaleY: 0.7,
+        // rotate: '1turn',
+        // loop: true,
+        delay: 1000,
+        endDelay: 500,
+        direction: "alternate",
+      });
+    </script>
+  </body>
 </html>
