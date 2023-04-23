@@ -79,6 +79,161 @@
             <h1>Products</h1>
           </div>
         </div>
+        <div class="row mb-5">
+          <div class="col-1 me-0">
+            <button
+              class="btn card-button"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              Filter
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  Filters
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="row">
+                  <h5>Keyboard Type:</h5>
+                  <div>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="firstCheckbox"
+                        />
+                        <label class="form-check-label" for="firstCheckbox"
+                          >Numpads & Macropads</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="secondCheckbox"
+                        />
+                        <label class="form-check-label" for="secondCheckbox"
+                          >Ortholinear</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="thirdCheckbox"
+                        />
+                        <label class="form-check-label" for="thirdCheckbox"
+                          >Staggered</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="fourthCheckbox"
+                        />
+                        <label class="form-check-label" for="fourthCheckbox"
+                          >30% Keyboard</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="fifthCheckbox"
+                        />
+                        <label class="form-check-label" for="fifthCheckbox"
+                          >40% Keyboard</label
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <h5>Price Range:</h5>
+                  <div>
+                    <ul class="list-group">
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="firstCheckbox"
+                        />
+                        <label class="form-check-label" for="firstCheckbox"
+                          >$60 and below</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="secondCheckbox"
+                        />
+                        <label class="form-check-label" for="secondCheckbox"
+                          >$60 - $100</label
+                        >
+                      </li>
+                      <li class="list-group-item">
+                        <input
+                          class="form-check-input me-1"
+                          type="checkbox"
+                          value=""
+                          id="thirdCheckbox"
+                        />
+                        <label class="form-check-label" for="thirdCheckbox"
+                          >Above $100</label
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="dropdown">
+              <button
+                class="btn card-button dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sort by:
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Recommended</a></li>
+                <li><a class="dropdown-item" href="#">Newest</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Best reviewed</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="row row-cols-1 row-cols-lg-3 g-4">
           <!-- prod 1 -->
           <div class="col">
@@ -91,14 +246,23 @@
               <div class="card-body">
                 <h5 class="card-title">The Numeric 17</h5>
                 <p class="card-text">17-key macro or regular numeric keypad?</p>
-                <button
-                  type="button"
-                  class="btn card-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#prod1modal"
-                >
-                  View details
-                </button>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn card-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#prod1modal"
+                      >
+                        View details
+                      </button>
+                    </div>
+                    <div class="col-6 text-end">
+                      <h5>$60</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -179,6 +343,7 @@
           <div class="col">
             <div class="card h-100">
               <img
+                class="card-image"
                 src="img/ortholinear-keyboards/30key_keyboard-transformed.png"
                 alt=""
               />
@@ -187,15 +352,23 @@
                 <p class="card-text">
                   For the die hard mininal hand movement typists!
                 </p>
-                <!-- button for modal -->
-                <button
-                  type="button"
-                  class="btn card-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#prod2modal"
-                >
-                  View details
-                </button>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn card-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#prod1modal"
+                      >
+                        View details
+                      </button>
+                    </div>
+                    <div class="col-6 text-end">
+                      <h5>$80</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -356,19 +529,31 @@
           <!-- prod 3 -->
           <div class="col">
             <div class="card h-100">
-              <img src="img/ortholinear-keyboards/Ortho-48-nobg.png" alt="" />
+              <img
+                class="card-image"
+                src="img/ortholinear-keyboards/Ortho-48-nobg.png"
+                alt=""
+              />
               <div class="card-body">
                 <h5 class="card-title">Ortho 48</h5>
                 <p class="card-text">Functionality with less layers!</p>
-                <!-- button for modal -->
-                <button
-                  type="button"
-                  class="btn card-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#prod3modal"
-                >
-                  View details
-                </button>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn card-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#prod1modal"
+                      >
+                        View details
+                      </button>
+                    </div>
+                    <div class="col-6 text-end">
+                      <h5>$130</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -528,15 +713,23 @@
                 <p class="card-text">
                   37 key masterpiece for the traditionalists.
                 </p>
-                <!-- button for modal -->
-                <button
-                  type="button"
-                  class="btn card-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#prod4modal"
-                >
-                  View details
-                </button>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn card-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#prod1modal"
+                      >
+                        View details
+                      </button>
+                    </div>
+                    <div class="col-6 text-end">
+                      <h5>$85</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -680,19 +873,32 @@
           <!-- prod 5 -->
           <div class="col">
             <div class="card h-100">
-              <img src="img/Stagerred/P-38-1_Ergo_(1)-transformed.png" alt="" />
+              <img
+                class="card-image"
+                src="img/Stagerred/P-38-1_Ergo_(1)-transformed.png"
+                alt=""
+              />
               <div class="card-body">
                 <h5 class="card-title">Stag 38 Ergo</h5>
                 <p class="card-text">Traditional with a sense of comfort.</p>
                 <!-- button for modal -->
-                <button
-                  type="button"
-                  class="btn card-button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#prod5modal"
-                >
-                  View details
-                </button>
+                <div class="card-footer">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="button"
+                        class="btn card-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#prod1modal"
+                      >
+                        View details
+                      </button>
+                    </div>
+                    <div class="col-6 text-end">
+                      <h5>$110</h5>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -910,7 +1116,7 @@
         scaleX: 0.7,
         scaleY: 0.7,
         // rotate: '1turn',
-        // loop: true,
+        loop: true,
         delay: 1000,
         endDelay: 500,
         direction: "alternate",
