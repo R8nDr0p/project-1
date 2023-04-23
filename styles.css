@@ -84,3 +84,6 @@
 .footer-social-buttons:hover{
     color:rgb(153, 41, 87);
 }
+.modal-content{
+    background-color: bisque;
+}
