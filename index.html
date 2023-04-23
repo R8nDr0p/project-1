@@ -31,8 +31,8 @@
       <div class="container-fluid">
         <!-- <div class="d-flex align-items-center"> -->
           <a class="navbar-brand ms-2 fw-bold p-0" href="index.html"
-            ><i class="fa-solid fa-bounce fa-keyboard fa-2xl"></i
-            ><span class="header-brand-name fs-5">Keyboard Palace</span></a
+            ><h1 class="header-brand-name"><i class="fa-solid fa-bounce fa-keyboard fa-2xl"></i
+              >Keyboard Palace</h1></a
             >
           <button
             class="navbar-toggler"
@@ -58,6 +58,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,7 +84,7 @@
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
-              data-bs-ride="false"
+              data-bs-ride="carousel"
             >
               <div class="carousel-indicators">
                 <button
@@ -107,7 +110,7 @@
               </div>
               <div class="carousel-inner">
                 <!-- 1st slide -->
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval:="100">
                   <img
                     src="img/ortholinear-keyboards/Ortho-48-nobg.png"
                     class="d-block w-100"
@@ -122,7 +125,7 @@
                   </div>
                 </div>
                 <!-- 2nd Slide -->
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval:="500" >
                   <img 
                     src="img/Stagerred/P-38-1-transformed.png"
                     class="d-block w-100"
@@ -182,7 +185,7 @@
     <section class="Ortholinear-Section">
       <div class="container">
         <div class="row">
-          <div class="col-6 text-start mt-5 ortholinear-label">
+          <div class="col-6 text-start mt-5 product-label">
             <h3>Ortholinear</h3>
           </div>
           <div class="col-6 text-end mt-5">
@@ -190,16 +193,18 @@
           </div>
         </div>
         <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <!-- prod 1 -->
           <div class="col">
             <div class="card h-100">
               <img class="card-image" src="img/ortholinear-keyboards/macro-keys.png" alt="" />
               <div class="card-body">
-                <h5 class="card-title">The Numeric 17</h5>
+                <h5 class="card-title">The Numeric 17 Ortho</h5>
                 <p class="card-text">17-key macro or regular numeric keypad?</p>
                 <a href="#" class="btn card-button">View details </a>
               </div>
             </div>
           </div>
+          <!-- prod 2 -->
           <div class="col">
             <div class="card h-100">
               <img src="img/ortholinear-keyboards/30key_keyboard-transformed.png" alt="" />
@@ -210,6 +215,7 @@
               </div>
             </div>
           </div>
+          <!-- prod 3 -->
           <div class="col">
             <div class="card h-100">
               <img src="img/ortholinear-keyboards/Ortho-48-nobg.png" alt="" />
@@ -227,7 +233,7 @@
     <section class="Staggered-Section">
       <div class="container">
         <div class="row">
-          <div class="col-6 text-start mt-5 ortholinear-label">
+          <div class="col-6 text-start mt-5 product-label">
             <h3>Staggered</h3>
           </div>
           <div class="col-6 text-end mt-5">
