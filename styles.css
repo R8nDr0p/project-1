@@ -88,7 +88,7 @@
     background-color: bisque;
 }
 .title-about{
-   color: rgba(81, 23, 47, 1); 
+    color: rgba(81, 23, 47, 1); 
 }
 .payment-head{
     font-family: courier, courier new, times new roman;
@@ -117,4 +117,8 @@
     background-color: beige ;
     border: 1px solid;
     color: rgba(81, 23, 47, 1);
+}
+#products-section{
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
 }
